@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kobo Dashboard</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Dashboard with countdown, weather, aqi and calendar for KOBO AURA H2O">
+	<meta name="keywords" content="countdown, clock, weather, aqi, calendar, kobo, aura, h2o">
+	<meta name="author" content="Etienne PASTEUR">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>	
+	<div class="dashboard_container">
+		<div class="horizontal_item item_container">
+			<div class="vertical_item item_clock">
+				<div class="countdown_number days">
+					<div class="number-days">#</div>
+					<div class="label">Days</div>
+				</div>
+				<div class="countdown_number hours">
+					<div class="number-hours">#</div>
+					<div class="label">Hours</div>
+				</div>
+			</div>
+			<hr class="hr_horizontal">
+			<div class="vertical_item item_meteo">
+				<div class="vertical_item meteo_actual">
+					<div class="colone_item_meteo">
+						<div class="actual_temp"><span class="temperature">#</span>°C</div>
+					</div>
+					<div class="colone_item_meteo actual_temp_icon">
+						<img src="icon/unknown.svg" width="100%" height="100%">
+					</div>
+				</div>
+				<div class="vertical_item meteo_today"></div>
+			</div>
+			<hr class="hr_horizontal">
+			<div class="vertical_item meteo_aqi_container">
+				<div class="horizontal_item item_meteo_schedule"></div>
+				<hr class="hr_vertical">
+				<div class="horizontal_item item_aqi">
+					<div class="item_aqi_title">IQA US</div>
+					<div class="item_aqi_current">#</div>
+					<div class="item_aqi_where">#</div>
+				</div>
+			</div>
+		</div>
+		<hr class="hr_vertical_long">
+		<div class="horizontal_item item_schedule"></div>
+	</div>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>
